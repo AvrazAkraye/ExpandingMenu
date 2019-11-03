@@ -147,8 +147,9 @@ open class ExpandingMenuItem: UIView {
         button.setTitleColor(titleColor, for: UIControlState())
         #endif
         button.sizeToFit()
+        button.contentVerticalAlignment = .fill
         //print("asdf");
-        button.addTarget(self, action: #selector(tapped), for: .touchUpInside)
+       // button.addTarget(self, action: #selector(tapped), for: .touchUpInside)
         
         return button
     }
